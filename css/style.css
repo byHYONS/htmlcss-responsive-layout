@@ -9,6 +9,7 @@
 .menu {
     background-color: #0084FD; 
     position: fixed;
+    z-index: 500;
 }
 
 .menu__desktop {display: none;}
@@ -23,13 +24,88 @@
 }
 
 
+/* --- RESPONSIVE --- */
+@media screen and (min-width: 768px) {
+    h1 {color: red;}
+ 
+    
+}
+
+@media screen and (min-width: 1140px) {
+    h1 {color: orange;}
+    .menu_container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .menu__mobile {display: none;}
+
+    .menu__desktop {display: inline-block;}
+}
+
+/* FINE • HEADER & MENÙ */
 
 /* ------------------------------
             MAIN
 ------------------------------ */
     /* sezione hero 6 colonne  */
+.hero {padding: 0px 30px;}
 
+.col__hero, .col__hero__content { 
+    width: 100%;
+    background-color: #B5DDFF;
+    border-radius: 25px;
+    height: 450px;
+}
 
+.col__hero__content-text {
+    height: 50px;
+    border: 1px solid red;
+}
+
+.col__hero__content-btn {
+    height: 25px;
+    border: 1px solid red;
+}
+
+.col__hero__content-img {
+    height: 50px;
+    border: 1px solid red;
+}
+
+/* --- RESPONSIVE --- */
+@media screen and (min-width: 768px) {
+    h1 {color: red;}
+
+    .col__hero {
+        flex: 1 calc(100% / 3 - 30px);
+        
+    }
+    .col__hero__content {
+        flex: 2 calc((100% / 3 - 30px) * 2);
+    }
+    
+}
+
+@media screen and (min-width: 1140px) {
+    h1 {color: orange;}
+    
+    .row .hero:nth-child(2) {margin-top: 100px;}
+    
+    .hero-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .col__hero {
+        flex: 1 calc(100% / 3 - 30px);
+        
+    }
+    .col__hero__content {
+        flex: 2 calc((100% / 3 - 30px) * 2);
+    }
+}
+
+/* FINE • hero section */
 
     /* sezione planning 2 colonne • foto + card  */
 
@@ -61,4 +137,3 @@
 
 
 
-#B5DDFF;
