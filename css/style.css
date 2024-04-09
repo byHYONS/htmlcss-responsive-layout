@@ -131,11 +131,12 @@
 
 @media screen and (min-width: 1140px) {
     .container__plan {
-        width: 70%;
+        width: 80%;
         margin: 0 auto;
+        padding: 0;
     }
     .col__plan {
-        width: calc(100% / 2 - 30px);
+        width: calc(100% / 2 - 15px);
     }
 }
 
@@ -232,18 +233,37 @@
  /* FINE • future section */
  
     /* sezione about us 2 colonne • h2 + testo + foto + testo  */
+.container__about-us {padding: 0 30px;}
+
+.col__about-us__text {width: 100%;}
+
+.col__about-us__card {width: 100%;}
+
+
+
 
 
 
  /* --- RESPONSIVE --- */
  @media screen and (min-width: 768px) {
 
+    .col__about-us__text {width: calc(60% - 30px);}
+
+    .col__about-us__card {width: calc(40% - 30px);}
 
  }
  
  
  @media screen and (min-width: 1140px) {
  
+    .container__about-us {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .col__about-us__text {width: calc(60% - 30px);}
+
+    .col__about-us__card {width: calc(40% - 30px);}
  
  }
  
