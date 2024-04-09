@@ -306,5 +306,40 @@
             FOOTER
 ------------------------------ */
 
+.container__footer {
+    padding: 0 30px;
+    background-color: #353535;
+}
+
+.content__footer { }
 
 
+
+
+/* --- RESPONSIVE --- */
+@media screen and (min-width: 768px) {
+    .content__footer {
+        width: 80%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+
+ }
+ 
+ 
+ @media screen and (min-width: 1140px) {
+ 
+    .content__footer {
+        width: 60%;
+        margin: 0 auto;
+        padding: 0;
+    }
+ 
+ }
+ 
+ /* FINE • FOOTER */
+
+ /* ------------------------------
+            FINE
+------------------------------ */
