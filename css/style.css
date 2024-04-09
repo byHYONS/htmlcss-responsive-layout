@@ -271,12 +271,19 @@
 
 
     /* sezione call to action • h2/3 + text + button  */
+.get-started {background-color: #9893E4;}
 
+.container__get-started {padding: 0 30px;}
 
-
+.col__get-started {width: 100%;}
 
  /* --- RESPONSIVE --- */
  @media screen and (min-width: 768px) {
+    .container__get-started {
+        width: 80%;
+        margin: 0 auto;
+        padding: 0;
+    }
 
 
  }
@@ -284,6 +291,11 @@
  
  @media screen and (min-width: 1140px) {
  
+    .container__get-started {
+        width: 60%;
+        margin: 0 auto;
+        padding: 0;
+    }
  
  }
  
