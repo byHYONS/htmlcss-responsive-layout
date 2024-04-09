@@ -75,8 +75,7 @@
 
 /* --- RESPONSIVE --- */
 @media screen and (min-width: 768px) {
-    h1 {color: red;}
-
+    
     .col__hero {
         flex: 1 calc(100% / 3 - 30px);
         
@@ -88,7 +87,7 @@
 }
 
 @media screen and (min-width: 1140px) {
-    h1 {color: orange;}
+    
     .hero {padding: 0;}
     
     .row .hero:nth-child(2) {margin-top: 100px;}
@@ -140,25 +139,136 @@
     }
 }
 
-    /* sezione partners 4 colonne • h2 + 3 foto con text  */
+/* FINE • plan section */
+
+    /* sezione testimonial 4 colonne • h2 + 3 foto con text  */
+.container__testimonial {
+    padding: 0 30px;
+}
+
+.col__testimonial {width: 100%;}
+
+.content__testimonial {
+    width: 100%;
+    background-color: #9893E4;
+    border-radius: 25px;
+    
+}
+
+.content__testimonial__img {
+    width: 35%;
+    height: 100px;
+}
+
+.content__testimonial__text {
+    width: 65%;
+    height: 200px;
+}
 
 
+    /* --- RESPONSIVE --- */
+@media screen and (min-width: 768px) {
+    .content__testimonial {
+    flex-direction: row;
+    }
+
+}
 
 
-    /* sezione working with us 6 colonne • h2 + 6 colonne  */
+@media screen and (min-width: 1140px) {
+    .container__testimonial {
+        width: 80%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .content__testimonial {
+        flex-direction: row;
+    }
+    
+
+}
+
+/* FINE • testimonial section */
+
+    /* sezione future 6 colonne • h2 + 6 colonne  */
+.future {background-color: #9893E4;}
+
+.container__future {
+    padding: 0 30px;
+}
+
+.col__future {width: 100%;}
+
+.content__future {
+    background-color: white;
+    border-radius: 25px;
+}
 
 
+ /* --- RESPONSIVE --- */
+ @media screen and (min-width: 768px) {
+
+    .content__future__title {width: 100%;}
+
+    .col__future {width: calc(50% - 30px);}
 
 
+ }
+ 
+ 
+ @media screen and (min-width: 1140px) {
+    .container__future {
+        width: 80%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .content__future__title {width: 100%;}
+    
+    .col__future {width: calc(100% / 3 - 30px);}
+ 
+ }
+ 
+ /* FINE • future section */
+ 
     /* sezione about us 2 colonne • h2 + testo + foto + testo  */
 
 
+
+ /* --- RESPONSIVE --- */
+ @media screen and (min-width: 768px) {
+
+
+ }
+ 
+ 
+ @media screen and (min-width: 1140px) {
+ 
+ 
+ }
+ 
+ /* FINE • about ua section */ 
 
 
     /* sezione call to action • h2/3 + text + button  */
 
 
 
+
+ /* --- RESPONSIVE --- */
+ @media screen and (min-width: 768px) {
+
+
+ }
+ 
+ 
+ @media screen and (min-width: 1140px) {
+ 
+ 
+ }
+ 
+ /* FINE • call to action section */
+ 
 
 /* ------------------------------
             FOOTER
