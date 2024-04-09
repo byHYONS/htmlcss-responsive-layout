@@ -89,10 +89,11 @@
 
 @media screen and (min-width: 1140px) {
     h1 {color: orange;}
+    .hero {padding: 0;}
     
     .row .hero:nth-child(2) {margin-top: 100px;}
     
-    .hero-container {
+    .container__hero {
         width: 80%;
         margin: 0 auto;
     }
@@ -108,8 +109,36 @@
 /* FINE • hero section */
 
     /* sezione planning 2 colonne • foto + card  */
+.plan {background-color: #9893E4;}
+.container__plan {padding: 0 30px;}
+
+.col__plan {
+    width: 100%;
+}
+
+.content__plan__card {
+    width: 100%;
+    background-color: white;
+    border-radius: 25px;
+
+}
+
+/* --- RESPONSIVE --- */
+@media screen and (min-width: 768px) {
 
 
+}
+
+
+@media screen and (min-width: 1140px) {
+    .container__plan {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .col__plan {
+        width: calc(100% / 2 - 30px);
+    }
+}
 
     /* sezione partners 4 colonne • h2 + 3 foto con text  */
 
