@@ -3,29 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/utility.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Layout Responsive</title>
 </head>
-<body>
+<body class="debug">
     <!-- HEADER • menù  -->
     <header>
         <div class="container-full menu">
-            <div class="row menu_container jc-between ai-center mx-30 bdb ht-90">
-                <div class="logo bdb">
-                    LOGO
+            <div class="row menu_container jc-between ai-center mx-30 ht-90">
+                <div class="logo">
+                    <img src="./img/logo.png" alt="logo">
                 </div>
-                <div class="menu__desktop bdb">
+                <div class="menu__desktop">
                     <ul>
                         <li><a href="#planning">Planning</a></li>
                         <li><a href="#testimonials">Testimonials</a></li>
                         <li><a href="#future">Future</a></li>
                         <li><a href="#about-us">About Us</a></li>
-                        <li class="btn bdb"><a href="#get-started">Get Started</a></li>
+                        <li><a class="btn" href="#get-started">Get Started</a></li>
                     </ul>
                 </div>
-                <div class="menu__mobile bdb">
-                    --
+                <div class="menu__mobile">
+                    <i class="fas fa-bars"></i>
                 </div>
             </div>
         </div>
@@ -37,7 +37,6 @@
         <div class="container__hero pt-140">
             <div class="row hero gap-30 mb-50">
                 <div class="col__hero col__hero__content bdb">
-                    <h1>TEST QUERY</h1>
                     <div class="col__hero__content-text bdb"></div>
                     <div class="col__hero__content-btn bdb"></div>
                     <div class="col__hero__content-img bdb"></div>
@@ -71,7 +70,7 @@
        </section>
 
         <!-- sezione testimonial 4 colonne • h2 + 3 foto con text -->
-       <section id="testimonial" class="testimonial">
+       <section id="testimonials" class="testimonial">
             <div class="container__testimonial">
                 <div class="row gap-30 py-50">
                     <div class="col__testimonial ht-50 bdb">

@@ -1,15 +1,59 @@
 /* ------------------------------
-            GENERAL
+            INDEX CSS
 ------------------------------ */
+@import url("./utility.css");
 
+            /* FINE  */
+
+/* ------------------------------
+            COMMON &
+        CUSTOM PROPERTIES
+------------------------------ */
+:root {
+    --bg-menu: #0084FD;
+    --first-color: #B5DDFF;
+    --second-color: #9893E4;
+    --footer-color: #353535;
+    --first-color-title: #9893E4;
+    --second-color-title: #0084FD;
+    --third-color-title: #FEC260;
+    --second-color-text: #fff;
+    --third-color-text: #9893E4;
+}
+
+
+            /* FINE  */
+
+/* ------------------------------
+            DEBUG   
+------------------------------ */
+.debug header::before {
+    content: 'MOBILE';
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background-color: blue;
+    color: white;
+    padding: 15px 25px;
+}
+
+.debug .content:empty {height: 350px;}
+
+
+            /* FINE  */
 
 /* ------------------------------
             HEADER   
 ------------------------------ */
 .menu {
-    background-color: #0084FD; 
+    background-color: var(--bg-menu); 
     position: fixed;
     z-index: 500;
+}
+
+.fa-bars {
+    font-size: 30px;
+    filter: invert(100%);
 }
 
 .menu__desktop {display: none;}
@@ -23,16 +67,48 @@
     padding: 20px;
 }
 
+a.btn {
+    display: inline-block;
+    padding: 8px 15px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
 
-/* --- RESPONSIVE --- */
+    /* FINE • HEADER & MENÙ */
+
+
+
+/* -------------------------
+         RESPONSIVE 
+------------------------- */
+
+    /* --- TABLET --- */
 @media screen and (min-width: 768px) {
-    h1 {color: red;}
+    .debug header::before {
+        content: 'TABLET';
+        background-color: lawngreen;
+    }
+
+
+    
  
     
 }
 
+
+    /* --- DESKTOP --- */
+
 @media screen and (min-width: 1140px) {
-    h1 {color: orange;}
+    .debug header::before {
+        content: 'DESKTOP';
+        background-color: orange;
+    }
+
     .menu_container {
         width: 80%;
         margin: 0 auto;
@@ -41,9 +117,30 @@
     .menu__mobile {display: none;}
 
     .menu__desktop {display: inline-block;}
+
+
+
+
 }
 
-/* FINE • HEADER & MENÙ */
+
+
+
+    /* --- DESKTOP LARGE --- */
+
+@media screen and (min-width: 1200px) {
+    .debug header::before {
+        content: 'DESKTOP LARGE';
+        background-color: red;
+    }
+    .container {max-width: 1200px;}
+
+
+}
+            
+            /* FINE  */
+
+
 
 /* ------------------------------
             MAIN
@@ -53,7 +150,7 @@
 
 .col__hero, .col__hero__content { 
     width: 100%;
-    background-color: #B5DDFF;
+    background-color: var(--first-color);
     border-radius: 25px;
     height: 450px;
 }
@@ -108,7 +205,7 @@
 /* FINE • hero section */
 
     /* sezione planning 2 colonne • foto + card  */
-.plan {background-color: #9893E4;}
+.plan {background-color: var(--second-color);}
 .container__plan {padding: 0 30px;}
 
 .col__plan {
@@ -119,6 +216,7 @@
     width: 100%;
     background-color: white;
     border-radius: 25px;
+    align-self: flex-end;
 
 }
 
