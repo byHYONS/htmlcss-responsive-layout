@@ -139,20 +139,37 @@ a.btn {
     margin-bottom: 30px;
 }
 
-
 /* FINE • hero section */
 
 
     /* sezione planning 2 colonne • foto + card  */
 #planning {background-color: var(--second-color);}
 
+#planning h3, #planning p {color: var(--second-color-text);}
+
+#planning .col:nth-child(2) {align-self: flex-end;}
 
 .content__plan__card {
-    width: 100%;
-    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--second-color-text);
+    color: #000;
     border-radius: 25px;
     align-self: flex-end;
+}
 
+#planning .content__plan__card p {color: #000; font-style: italic;}
+
+#planning .content__plan__card img {width: 50%;}
+
+#planning i.fas {
+    margin-top: 35px;
+    display: inline-block;
+    font-size: 25px;
+    background-color: var(--first-color-title);
+    padding: 18px;
+    border-radius: 50%;
 }
 
 
@@ -416,27 +433,14 @@ a.btn {
 
         #hero .content__get-demo__img {width: 45%; align-self: flex-end;}
 
-        .col__hero i.fas {font-size: 100px;}
-
-
-
+        .col__hero i.fas {font-size: 100px;}       
        
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
+       /* planning */
         #planning .col {width: calc(100% / 2 - 15px);}
+
+
+
+
 
         #testimonials .content {
             display: flex;
@@ -445,8 +449,6 @@ a.btn {
     
     
     }
-    
-    
     
     
         /* --- DESKTOP LARGE --- */
