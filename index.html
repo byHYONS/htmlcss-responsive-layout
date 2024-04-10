@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Layout Responsive</title>
 </head>
+
 <body class="debug">
     <!-- HEADER • menù  -->
     <header>
         <div class="container-full menu">
-            <div class="row menu_container jc-between ai-center mx-30 ht-90">
+            <div class="row container jc-between ai-center ht-90">
                 <div class="logo">
-                    <img src="./img/logo.png" alt="logo">
+                    <a href="#hero"><img src="./img/logo.png" alt="logo"></a>
                 </div>
                 <div class="menu__desktop">
                     <ul>
@@ -34,62 +38,95 @@
     <!-- MAIN -->
     <main>
         <!-- sezione hero 6 colonne -->
-        <div class="container__hero pt-140">
-            <div class="row hero gap-30 mb-50">
-                <div class="col__hero col__hero__content bdb">
-                    <div class="col__hero__content-text bdb"></div>
-                    <div class="col__hero__content-btn bdb"></div>
-                    <div class="col__hero__content-img bdb"></div>
-                </div>
-                <div class="col__hero bdb"></div>
-                <div class="col__hero bdb"></div>
-                <div class="col__hero bdb"></div>
-                <div class="col__hero bdb"></div>
-            </div>
-        </div>
-
-        <!-- sezione planning 2 colonne • foto + text + card -->
-       <section id="planning" class="plan">
-            <div class="container__plan">
-                <div class="row gap-30 py-50">
-                    <div class="col__plan">
-                        <div class="content__plan bdb ht-500">
-                            <img src="" alt="" class="wt-40 ht-200 bg-black">
-                            <h3>text</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure nam, illum qui officiis libero blanditiis voluptas perferendis facilis maxime aspernatur tempore laborum expedita distinctio doloremque!</p>
-                        </div>
-                    </div>
-                        <div class="col__plan">
-                            <div class="content__plan content__plan__card ht-500 bdb">
-        
+        <section id="hero">
+            <div class="container">
+                <div class="row gap-30 mb-50">
+                    <div class="col col__hero__card">
+                        <div class="content content__get-demo">
+                            <div class="content__get-demo__download">
+                                <h1 class="mb-30">Get a domo application</h1>
+                                <p class="lh-30">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam ipsum unde. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, libero.</p>
+                                <button class="btn"><i class="fab fa-apple"></i> App Store</button>
+                            </div>
+                            <div class="content__get-demo__img">
+                                <img src="./img/phone.png" alt="phone">
                             </div>
                         </div>
                     </div>
+                    <div class="col col__hero">
+                        <div class="content">
+                            <i class="fas fa-file-code"></i>
+                            <h3 class="mb-30">Clean code</h3>
+                            <p class="lh-30">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, reprehenderit.</p>
+                        </div>
+                    </div>
+                    <div class="col col__hero">
+                        <div class="content">
+                            <i class="fas fa-compass-drafting"></i>
+                            <h3 class="mb-30">Web design</h3>
+                            <p class="lh-30">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, reprehenderit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, quod.</p>
+                        </div>
+                    </div>
+                    <div class="col col__hero">
+                        <div class="content">
+                            <i class="fas fa-laptop-code"></i>
+                            <h3 class="mb-30">Developement</h3>
+                            <p class="lh-30">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, reprehenderit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, quod.</p>
+                        </div>
+                    </div>
+                    <div class="col col__hero">
+                        <div class="content">
+                            <i class="fas fa-bullhorn"></i>
+                            <h3 class="mb-30">Branding</h3>
+                            <p class="lh-30">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, reprehenderit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, quod.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-       </section>
+        </section>
+
+        <!-- sezione planning 2 colonne • foto + text + card -->
+        <section id="planning">
+            <div class="container">
+                <div class="row gap-30 py-50">
+                    <div class="col">
+                        <div class="content__plan bdb ht-500">
+                            <img src="" alt="" class="wt-40 ht-200 bg-black">
+                            <h3>text</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure nam, illum qui officiis libero blanditiis voluptas perferendis facilis maxime aspernatur tempore laboru expedita distinctio doloremque!</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="content__plan content__plan__card ht-500 bdb">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
 
         <!-- sezione testimonial 4 colonne • h2 + 3 foto con text -->
-       <section id="testimonials" class="testimonial">
-            <div class="container__testimonial">
+        <section id="testimonials">
+            <div class="container">
                 <div class="row gap-30 py-50">
-                    <div class="col__testimonial ht-50 bdb">
+                    <div class="col ht-50 bdb">
 
                     </div>
-                    <div class="col__testimonial">
-                        <div class="content__testimonial d-flex flex-wrap flex-col ai-center">
-                            <div class="content__testimonial__img bdb"></div>
-                            <div class="content__testimonial__text bdb"></div>
-                        </div>        
-                    </div>
-                    <div class="col__testimonial">
-                        <div class="content__testimonial d-flex flex-wrap flex-col ai-center">
+                    <div class="col">
+                        <div class="content">
                             <div class="content__testimonial__img bdb"></div>
                             <div class="content__testimonial__text bdb"></div>
                         </div>
                     </div>
-                    <div class="col__testimonial">
-                        <div class="content__testimonial d-flex flex-wrap flex-col ai-center">
+                    <div class="col">
+                        <div class="content">
+                            <div class="content__testimonial__img bdb"></div>
+                            <div class="content__testimonial__text bdb"></div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="content">
                             <div class="content__testimonial__img bdb"></div>
                             <div class="content__testimonial__text bdb"></div>
                         </div>
@@ -97,9 +134,9 @@
                 </div>
             </div>
 
-       </section>
+        </section>
         <!-- sezione future 6 colonne • h2 + 6 colonne -->
-       <section id="future" class="future">
+        <section id="future" class="future">
             <div class="container__future">
                 <div class="row gap-30 py-50">
                     <div class="content__future__title">
@@ -134,13 +171,13 @@
                         <div class="content__future ht-250 bdb">
 
                         </div>
-                    </div>           
+                    </div>
                 </div>
             </div>
-       </section>
+        </section>
 
         <!-- sezione about us 2 colonne • h2 + testo + foto + testo -->
-       <section id="about-us" class="about-us">
+        <section id="about-us" class="about-us">
             <div class="container__about-us">
                 <div class="row gap-30 py-50">
                     <div class="col__about-us__text">
@@ -155,25 +192,25 @@
                     </div>
                 </div>
             </div>
-       </section>
+        </section>
         <!-- sezione call to action • h2/3 + text + button -->
-       <section id="get-started" class="get-started">
+        <section id="get-started" class="get-started">
             <div class="container__get-started">
                 <div class="row gap-30 py-50">
                     <div class="col__get-started">
                         <div class="content__get-started ht-150 bdb">
-    
+
                         </div>
                     </div>
                     <div class="col__get-started ht-150 bdb">
-    
+
                     </div>
                     <div class="col__get-started ht-150 bdb">
-    
+
                     </div>
                 </div>
             </div>
-       </section>
+        </section>
     </main>
     <footer>
         <!-- FOOTER -->
@@ -188,6 +225,7 @@
         </div>
 
     </footer>
-    
+
 </body>
+
 </html>

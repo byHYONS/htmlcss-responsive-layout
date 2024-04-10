@@ -42,9 +42,23 @@
 
             /* FINE  */
 
+
+/* ------------------------------
+            LAYOUT
+------------------------------ */
+.container {padding: 0 30px;}
+
+.col {
+    width: 100%;
+    border-radius: 25px;
+}
+
+.content {padding: 25px;}
+
 /* ------------------------------
             HEADER   
 ------------------------------ */
+#hero > .container {padding-top: 140px;}
 .menu {
     background-color: var(--bg-menu); 
     position: fixed;
@@ -83,134 +97,55 @@ a.btn {
 
 
 
-/* -------------------------
-         RESPONSIVE 
-------------------------- */
-
-    /* --- TABLET --- */
-@media screen and (min-width: 768px) {
-    .debug header::before {
-        content: 'TABLET';
-        background-color: lawngreen;
-    }
-
-
-    
- 
-    
-}
-
-
-    /* --- DESKTOP --- */
-
-@media screen and (min-width: 1140px) {
-    .debug header::before {
-        content: 'DESKTOP';
-        background-color: orange;
-    }
-
-    .menu_container {
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    .menu__mobile {display: none;}
-
-    .menu__desktop {display: inline-block;}
-
-
-
-
-}
-
-
-
-
-    /* --- DESKTOP LARGE --- */
-
-@media screen and (min-width: 1200px) {
-    .debug header::before {
-        content: 'DESKTOP LARGE';
-        background-color: red;
-    }
-    .container {max-width: 1200px;}
-
-
-}
-            
-            /* FINE  */
-
-
-
 /* ------------------------------
             MAIN
 ------------------------------ */
     /* sezione hero 6 colonne  */
-.hero {padding: 0px 30px;}
-
-.col__hero, .col__hero__content { 
-    width: 100%;
+#hero .col {
     background-color: var(--first-color);
     border-radius: 25px;
-    height: 450px;
 }
 
-.col__hero__content-text {
-    height: 50px;
-    border: 1px solid red;
+#hero h1, 
+#hero h3 {
+    font-size: 25px;
+    color: var(--second-color-title)}
+
+#hero button.btn {
+    background-color: var(--bg-menu);
+    border-radius: 25px;
+    width: 85%;
+    color: #fff;
+    margin: 35px 0 50px;
 }
 
-.col__hero__content-btn {
-    height: 25px;
-    border: 1px solid red;
+#hero img {
+    display: block;
+    width: 100%;
 }
 
-.col__hero__content-img {
-    height: 50px;
-    border: 1px solid red;
+#hero .content__get-demo {
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
-/* --- RESPONSIVE --- */
-@media screen and (min-width: 768px) {
-    
-    .col__hero {
-        flex: 1 calc(100% / 3 - 30px);
-        
-    }
-    .col__hero__content {
-        flex: 2 calc((100% / 3 - 30px) * 2);
-    }
-    
+.col__hero h3, .col__hero p {text-align: center;}
+
+.col__hero i.fas {
+    display: block;
+    text-align: center;
+    font-size: 60px;
+    color: var(--second-color-title);
+    margin-bottom: 30px;
 }
 
-@media screen and (min-width: 1140px) {
-    
-    .hero {padding: 0;}
-    
-    .row .hero:nth-child(2) {margin-top: 100px;}
-    
-    .container__hero {
-        width: 80%;
-        margin: 0 auto;
-    }
-    .col__hero {
-        flex: 1 calc(100% / 3 - 30px);
-        
-    }
-    .col__hero__content {
-        flex: 2 calc((100% / 3 - 30px) * 2);
-    }
-}
 
 /* FINE • hero section */
 
-    /* sezione planning 2 colonne • foto + card  */
-.plan {background-color: var(--second-color);}
-.container__plan {padding: 0 30px;}
 
-.col__plan {
-    width: 100%;
-}
+    /* sezione planning 2 colonne • foto + card  */
+#planning {background-color: var(--second-color);}
+
 
 .content__plan__card {
     width: 100%;
@@ -220,36 +155,15 @@ a.btn {
 
 }
 
-/* --- RESPONSIVE --- */
-@media screen and (min-width: 768px) {
-
-
-}
-
-
-@media screen and (min-width: 1140px) {
-    .container__plan {
-        width: 80%;
-        margin: 0 auto;
-        padding: 0;
-    }
-    .col__plan {
-        width: calc(100% / 2 - 15px);
-    }
-}
 
 /* FINE • plan section */
 
     /* sezione testimonial 4 colonne • h2 + 3 foto con text  */
-.container__testimonial {
-    padding: 0 30px;
-}
 
-.col__testimonial {width: 100%;}
-
-.content__testimonial {
+#testimonials .content {
     width: 100%;
-    background-color: #9893E4;
+    text-align: center;
+    background-color: var(--second-color);
     border-radius: 25px;
     
 }
@@ -441,3 +355,112 @@ a.btn {
  /* ------------------------------
             FINE
 ------------------------------ */
+
+
+/* -------------------------
+         RESPONSIVE 
+------------------------- */
+
+    /* --- TABLET --- */
+    @media screen and (min-width: 768px) {
+        .debug header::before {
+            content: 'TABLET';
+            background-color: lawngreen;
+        }
+
+        .col__hero {flex: 1 calc(100% / 3 - 30px);}
+
+        .col__hero__card {flex: 2 calc((100% / 3 - 30px) * 2);}
+
+        #hero button.btn{width: 75%;}
+
+        #hero img {width: 70%;}
+        
+        #testimonials .content {display: flex; align-items: center;}
+
+        .col__hero i.fas {font-size: 85px; margin-bottom: 50px;}
+        
+    }
+    
+    
+        /* --- DESKTOP --- */
+    
+    @media screen and (min-width: 1140px) {
+        .debug header::before {
+            content: 'DESKTOP';
+            background-color: orange;
+        }
+        /* container */
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        
+        /* menu */
+        .menu__mobile {display: none;}
+    
+        .menu__desktop {display: inline-block;}
+        
+        /* hero */
+        .col__hero {flex: 1 calc(100% / 3 - 30px);}
+
+        .col__hero__card {flex: 2 calc((100% / 3 - 30px) * 2);}
+
+        #hero button.btn {margin-bottom: 70px;}
+
+        #hero .content__get-demo {display: flex; gap: 25px; margin-bottom: 0; padding-bottom: 0;}
+
+        #hero img {width: 100%;}
+
+        #hero .content__get-demo__download {width: 55%;}
+
+        #hero .content__get-demo__img {width: 45%; align-self: flex-end;}
+
+        .col__hero i.fas {font-size: 100px;}
+
+
+
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+        #planning .col {width: calc(100% / 2 - 15px);}
+
+        #testimonials .content {
+            display: flex;
+            align-items: center;
+        }
+    
+    
+    }
+    
+    
+    
+    
+        /* --- DESKTOP LARGE --- */
+    
+    @media screen and (min-width: 1200px) {
+        .debug header::before {
+            content: 'DESKTOP LARGE';
+            background-color: red;
+        }
+        .container {max-width: 1200px;}
+    
+    
+    }
+                
+                /* FINE  */
+    
+    
